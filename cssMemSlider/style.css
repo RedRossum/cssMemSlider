@@ -213,5 +213,29 @@ input {
   margin-left: -75%;
 }
 
+@media (max-width: 1000px){
+  .screen {
+    display: grid;
+
+    grid-template-areas:
+          "slider-frame"
+          "nav"
+        "text-frame";
+    grid-template-rows: 1.2fr 0.7fr 0.7fr;
+    grid-template-columns: 1fr ;
+
+    height: 100vh;
+
+    justify-content: center;
+  }
+
+  .control {
+    justify-content: center;
+  }
+
+  .text {
+    text-align: center;
+  }
+}
 
 
